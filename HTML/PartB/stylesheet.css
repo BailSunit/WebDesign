@@ -1,0 +1,84 @@
+body {
+  background-image: url("images/background.jpg");
+  color: rgb(255, 255, 255);
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+}
+
+.text {
+  position: relative;
+  left: 350px;
+  width: 800px
+}
+
+header {
+  padding: 30px;
+  background-color: #e9c87d;
+  border-radius: 25px;
+  width: 50%;
+  text-align: center;
+  font-family: fantasy;
+  font-size: xx-large;
+  text-shadow: 3px 4px #d74444;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+h2, h3 {
+  text-shadow: 2px 2px green;
+  font-family: cursive;
+}
+
+footer {
+  position: relative;
+  text-align: center;
+  bottom: 0px;
+  width: 100%;
+  text-shadow: 1px 1px #d74444;
+}
+
+input[type=text]:focus,
+select:focus {
+  width: 25%;
+  background-color: lightgray;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: content-box;
+  border-bottom: 4px greenyellow;
+  font-family: monospace;
+}
+
+input[type=text],
+select {
+  padding: 10px 18px;
+  font-family: monospace;
+}
+
+.video:hover {
+  box-shadow: 10px -10px green;
+}
+
+.calculator {
+  padding: 20px;
+  background-color: lightblue;
+  width: 75%;
+}
+
+.calculator:hover {
+  box-shadow: -10px 10px pink;
+}
+
+output, .dollar {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: xx-large;
+  color: green;
+}
+
+details {
+  font-size: large;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-shadow:3px 2px  red;
+}
