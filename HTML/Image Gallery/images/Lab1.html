@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<head>
+    <title>
+        Image Gallery
+    </title>
+    <style>
+        header {
+            text-align: center;
+        }
+
+        #container {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .gallery {
+            float: left;
+            width: 150px;
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid red;
+        }
+
+        .gallery img {
+            width: 150px;
+            height: 150px;
+        }
+
+        .gallery:hover {
+            cursor: pointer;
+            border-radius: 25px;
+            box-shadow: 10px -10px gray;
+            border: 1px solid gray;
+        }
+
+        .gallery .description {
+            padding: 10px;
+            text-align: center;
+        }
+        
+        a:visited {
+            color: seagreen;
+        }
+
+        a:hover {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Displaying Images Demo
+        </h1>
+    </header>
+
+    <div id="container">
+
+        <div class="gallery"><a href="cap.png" target="_blank">
+                <img src="cap.png" />
+                <div class="description">Cap</div>
+            </a>
+        </div>
+        <div class="gallery"><a href="football.png" target="_blank">
+                <img src="football.png" />
+                <div class="description">Football</div>
+            </a>
+        </div>
+        <div class="gallery"><a href="shoes.png" target="_blank">
+                <img src="shoes.png" />
+                <div class="description">Shoes</div>
+            </a>
+        </div>
+        <div class="gallery"><a href="wallet.png" target="_blank">
+                <img src="wallet.png" />
+                <div class="description">Wallet</div>
+            </a>
+        </div>
+
+    </div>
+</body>
