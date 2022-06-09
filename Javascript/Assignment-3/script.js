@@ -38,6 +38,15 @@ function deleteRow(obj) {
   var tr = obj.parentElement.parentElement;
   document.getElementById("myTable").deleteRow(tr.rowIndex);
   alert("Deleting Student Record data");
+  disableButton();
+}
+
+function disableButton() {
+  var checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+  if (checkboxes.length == 0) {
+    document.getElementById("button").disabled = true;
+    document.getElementById("button").style.backgroundColor = "gray";
+  }
 }
 
 function editRow(obj) {
@@ -66,7 +75,7 @@ function newStudent() {
   var row = document.createElement("tr");
   var checkCell = document.createElement("td");
   checkCell.innerHTML =
-    '<input id="checkbox" type="checkbox" onclick="selectedEntry(this)"/><br/><br/><img src="down.png" width="25px" onclick="expandEntry(this)"/>';
+    '<input id="checkbox" type="checkbox" class="pl" onclick="selectedEntry(this)"/><br/><br/><img src="down.png" width="25px" onclick="expandEntry(this)"/>';
   var stuCell = document.createElement("td");
   stuCell.innerHTML = "Student " + ++studentCount;
   var advCell = document.createElement("td");
