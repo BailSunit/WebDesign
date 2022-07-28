@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Educademy:LMS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--External CSS File-->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Google Fonts API-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet" />
+  <!--Link for favicon-->
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+
+  <!--Bootstrap links-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <!--Font Awesome-->
+  <script src="https://kit.fontawesome.com/94732d8944.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><span class="title-color"><i class="fa-solid fa-graduation-cap"></i> EDUCADEMY
+        </span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link hover-nav" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropDown" data-bs-toggle="dropdown">Courses</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropDown">
+              <a href="#" class="dropdown-item">HTML</a>
+              <a href="#" class="dropdown-item">Javascript</a>
+              <a href="#" class="dropdown-item">CSS</a>
+              <a href="#" class="dropdown-item">React</a>
+              <a href="#" class="dropdown-item">Redux</a>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Support</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><button class="btn btn-sm donate m-0" id="myBtn" style="color: azure">
+                LogIn <i class="fas fa-sign-in-alt"></i></button></a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#"><button class="btn btn-sm donate m-0" id="myBtn" style="color: azure">
+                SignUp <i class="fas fa-sign-in-alt"></i></button></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <hr id="navHr" />
+  <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+      <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="overlay-image" style="background-image: url(images/slide1.jpg)"></div>
+        <div class="container">
+          <h1>Join Us</h1>
+          <p>
+            We have been preparing the students for the future. Sign up for
+            the best academic experience.
+          </p>
+          <a href="#" class="btn btn-lg btn-primary">Sign up Today</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="overlay-image" style="background-image: url(images/slide2.jpg)"></div>
+        <div class="container">
+          <h1>Excel</h1>
+          <p>
+            We offer a wealth of opportunities for you to learn and apply new
+            skills and help you prepare for your professional endeavors. Check
+            our courses.
+          </p>
+          <a href="#" class="btn btn-lg btn-primary">Course list</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="overlay-image" style="background-image: url(images/slide3.jpg)"></div>
+        <div class="container">
+          <h1>Admissions and Aid</h1>
+          <p>
+            We provide a distinctive and supportive academic environment at an
+            affordable price. Check our pricing model for more information.
+          </p>
+          <a href="#pricing" class="btn btn-lg btn-primary">Pricing model</a>
+        </div>
+      </div>
+    </div>
+    <a href="#myCarousel" class="carousel-control-prev" role="button" data-bs-slide="prev">
+      <span class="sr-only">Previous</span>
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </a>
+    <a href="#myCarousel" class="carousel-control-next" role="button" data-bs-slide="next">
+      <span class="sr-only">Next</span>
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <!---grid start-->
+  <div class="container-fluid mt-8 pb-5 pt-5">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 col-12">
+        <h6 class="display-6 text-center news">Community News</h6>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <div class="mediaBody">
+              <div class="mediaLink">
+                <a
+                  href="https://www.crunchbase.com/organization/whitehat-jr-online-coding-classes-for-kids/company_overview/overview_timeline">White
+                  Hat Junior Announces </a>
+              </div>
+              <div class="mediaSub">
+                <span class="newsDate">
+                  Monday, June 20, 2022
+                </span>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="mediaBody">
+              <div class="mediaBody">
+                <div class="mediaLink">
+                  <a
+                    href="https://www.whitehatjr.com/space-explorer-program">Space Explorer Program </a>
+                </div>
+                <div class="mediaSub">
+                  <span class="newsDate">
+                    Saturday, June 18, 2022
+                  </span>
+                </div>
+              </div>
+          </li>
+          <li class="list-group-item">
+            <div class="mediaBody">
+              <div class="mediaLink">
+                <a
+                  href="https://careers.whitehatjr.come"> Careers</a>
+              </div>
+              <div class="mediaSub">
+                <span class="newsDate">
+                  Friday, June 17, 2022
+                </span>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+      <!----col2 -->
+      <div class="col-lg-6 col-md-12 col-12">
+        <h6 class="display-6 text-center news">Success Stories</h6>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <div class="mediaBody">
+              <div class="mediaLink">
+                <a
+                  href="https://blog.byjus.com/student-stories/how-byjus-helped-tushar-top-the-icse-board-with-99-marks/"> Student Tushar Panda Tops Class 10 ICSE Exams </a>
+              </div>
+              <div class="mediaSub">
+                <span class="newsDate">
+                  Friday, June 17, 2022
+                </span>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="mediaBody">
+              <div class="mediaLink">
+                <a
+                  href="https://blog.byjus.com/student-stories/byjus-help-aadya-mahraur-score-99-4/"> Aadya Mahraur Scores 99.4% in CBSE Class 10 Boards </a>
+              </div>
+              <div class="mediaSub">
+                <span class="newsDate">
+                  Friday, June 17, 2022
+                </span>
+              </div>
+            </div>
+          </li>
+
+          <li class="list-group-item">
+            <div class="mediaBody">
+              <div class="mediaLink">
+                <a
+                  href="https://blog.byjus.com/student-stories/hrishikesh-tiwari-boy-speaks-numbers/">Hrishikesh Tiwari scores a whopping 99.4% in CBSE Class 10 </a>
+              </div>
+              <div class="mediaSub">
+                <span class="newsDate">
+                  Friday, June 17, 2022
+                </span>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--card layout starts-->
+  <div class="container-fluid">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/card_bck.jpg" class="card-img-top" alt="img">
+          <div class="card-body">
+            <h5 class="card-title text-center">E-learning</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/card_bck1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Innovative Methods</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/card_bck2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Group study</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This card has even longer content than the first to show that equal height action.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--card layout ends-->
+    <br>
+
+    <!--Jumbotron Section-->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="jumbotron py-2 mb-0 donate rounded-0">
+          <h6 class="text-center"><i style="color:black; font-weight:lighter;"><br>Best Overall Online Course Platform
+              (Free or $49/mo)<br> <br>Start your journey today by Checking out our latest
+              offers!!   </i>
+              
+              <!-- <button class="btn events-btn mx-2"> OFFERS     -->
+
+                <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Offers"
+                data-content="Use code 'EDUCADEMY' to get 50% off..!!   Hurry Up!!!"> *Offers*</button>
+
+              </button></h6>
+
+
+                        
+              <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                crossorigin="anonymous"></script>
+              <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+                integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+                crossorigin="anonymous"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"
+                integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+                async></script>
+            
+              <script>
+                var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-toggle="popover"]'));
+                var popoverList = popoverTriggerList.map(function (popoverTrigger) {
+                  return new bootstrap.Popover(popoverTrigger);
+                });
+              </script>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <h3>Here’s what people are saying about us:</h3>
+      <div class="col-sm-4">
+        <div class="jumbotron py-4 mb-0  rounded-0" style="color:#00684d;">
+          <h4 class="quote pb-4"><i class="fas fa-quote-left px-3"></i>“By teaching our audience how to scale and grow
+            their business through online training, we’ve grown ours. We couldn’t have done it without Educademy.”.<i
+              class="fas fa-quote-right px-3"></i></h4>
+          <p class="quoteAuthor">– JOHN LEE, ENTREPRENEURS ON FIVER</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="jumbotron py-4 mb-0  rounded-0" style="color:#00684d">
+          <h4 class="quote pb-4"><i class="fas fa-quote-left px-3"></i>“You need to get on Educademy. The team is
+            creative, reliable, and offers unbeatable support.They always make sure all my bases are covered and, as a
+            business owner, that’s invaluable.”.<i class="fas fa-quote-right px-3"></i></h4>
+          <p class="quoteAuthor">– LOUIE HAWU, SOCIAL LEARNER</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="jumbotron py-4 mb-0  rounded-0" style="color:#00684d">
+          <h4 class="quote pb-4"><i class="fas fa-quote-left px-3"></i>“I seriously can’t be more impressed with your
+            customer support team. They are the perfect blend of efficient and personable. It’s like having my very own
+            IT department.”.<i class="fas fa-quote-right px-3"></i></h4>
+          <p class="quoteAuthor">– GARY BETT,DIRECTOR</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!--Jumbotron Section ends-->
+    <!--Nav Tabs Section-->
+    <br><br>
+    <div class="nav-center">
+      <ul class="nav nav-tabs justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" href="#about" role="tab" data-bs-toggle="tab">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#golden" role="tab" data-bs-toggle="tab">Resources</a>
+        </li>
+      </ul>
+      </li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="about">
+          <p style="padding-top: 12px;padding-left: 23%;padding-right: 23%;">
+            <i class="fa fa-bars"></i>
+            <a href="#about">Eduacademy 3.x release</a><br>
+          <div class="caption">Monday, July 11, 2022</div><br>
+          <i class="fa fa-bars"></i>
+          <a href="#about">Mountain Moot 2022</a><br>
+          <div class="caption">Wednesday, July 20, 2022</div><br>
+          <i class="fa fa-bars"></i>
+          <a href="#about">MoodleMoot DACH 2022</a><br>
+          <div class="caption">Tuesday, August 30, 2022</div><br>
+          <i class="fa fa-bars"></i>
+          <a href="#about">Moodle 4.0.3 scheduled release</a><br>
+          <div class="caption">Monday, September 12, 2022</div><br>
+          </p>
+        </div>
+        <div class="tab-pane" id="golden">
+          <p style="padding-top: 12px;padding-left: 23%;padding-right: 23%;">
+            <i class="fa fa-file"></i><a href="#golden">Plugins: Moove
+              <br></a>
+          <div class="caption">Tuesday, June 21, 2022
+          </div><br>
+          <i class="fa fa-file"></i><a href="#golden">Plugins: Microsoft 365 Integration (shell plugin)
+          </a><br>
+          <div class="caption">Tuesday, June 21, 2022
+          </div><br>
+          <i class="fa fa-file"></i><a href="#golden">Jobs: Senior Learning Technology Developer - Full-time - Glasgow
+            (Hybrid working)
+          </a><br>
+          <div class="caption">Tuesday, June 21, 2022
+          </div><br>
+          <i class="fa fa-file"></i><a href="#golden">Jobs: Learning Systems Support Analyst - Full-time - Coventry,
+            United Kingdom
+          </a><br>
+          <div class="caption">Tuesday, June 14, 2022
+          </div><br>
+          </p>
+        </div>
+      </div>
+      <!--Nav Tabs end-->
+      <!--Footer Section-->
+      <footer>
+        <div class="row">
+          <div class="col-sm-4" style="align-items: center;">
+            <h4 class="text-secondary pl-3 pt-3"><i>&nbsp; Services</i></h4>
+            <div class="d-flex flex-row">
+              <ul class="p-3  list-unstyled">
+                <li><a href="#" class="text-secondary">Donate</a></li>
+                <li><a href="#" class="text-secondary">Start a Fundraiser<a></li>
+                <li><a href="#" class="text-secondary">Shop to Support</a></li>
+                <li><a href="#" class="text-secondary">How to Donate</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <h4 class="text-secondary pl-3 pt-3"><i>Contact</i></h4>
+            <div class="d-flex flex-row ">
+              <div class="py-3 pl-3 pr-0 text-secondary text-center"> <i class="fas fa-map-marker-alt fa-2x"></i>
+              </div>
+
+              <div class="p-3 text-secondary text-center"> <b>123 Huntington Avenue<br>Boston MA</b></div>
+            </div>
+            <div class="d-flex flex-row">
+              <div class="py-3 pl-3 pr-0 text-secondary text-center"> <i class="fas fa-phone fa-2x"></i></div>
+
+              <div class="p-3 text-secondary text-center"> <b>+1 (617) 12345678</b></div>
+            </div>
+            <div class="d-flex flex-row">
+              <div class="py-3 pl-3 pr-0 text-secondary text-center"> <i class="fas fa-envelope fa-2x"></i>
+              </div>
+
+              <div class="p-3 text-secondary text-center"> <b>xyz@gmail.com</b></div>
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <h4 class="text-secondary pl-3 pt-3"><i>&emsp;Follow Us</i></h4>
+            <div class="d-flex flex-row flex-wrap">
+              <div class="p-3 text-secondary text-center"><i class="fab fa-facebook fa-2x"></i></div>
+              <div class="px-2 py-3 text-secondary text-center"><i class="fab fa-instagram fa-2x"></i></div>
+              <div class="px-2 py-3 text-secondary text-center"><i class="fab fa-twitter fa-2x"></i></div>
+              <div class="px-2 py-3 text-secondary text-center"><i class="fab fa-pinterest fa-2x"></i></div>
+              <div class="px-2 py-3 text-secondary text-center"><i class="fab fa-google-plus-g fa-2x"></i>
+              </div>
+            </div>
+
+            <div class="container-fluid" style="align-items: center;">
+              <button type="button" class="btn btn-dark btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">
+                &nbsp;TERMS & CONDITIONS
+              </button>
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog p-3 mb-2 bg-dark text-white">
+                  <div class="modal-content p-3 mb-2 bg-dark text-white">
+                    <div class="modal-header ">
+                      <h7 class="modal-title " id="staticBackdropLabel">Terms & Conditions</h7>
+                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      By using this website the user agrees and accepts to be bound by the Terms and Conditions.
+                      Users should check from time to time for current Terms and Conditions as these can be updated or
+                      changed.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <h7 style="margin-left:550px;"><small class="text-muted">COPYRIGHT &copy; 2022 EDUCADEMY LTD. ALL RIGHTS
+                  RESERVED</small></h7>
+            </div>
+          </div>
+      </footer>
+
+      <!--Badge-->
+      <div class="badge-container">
+        <i class="fas fa-comments fa-3x"></i>
+        <span class="badge badge-notify">7</span>
+      </div>
+
+    </div>
+
+    <br></br>
+
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+
+</body>
+
+</html>
