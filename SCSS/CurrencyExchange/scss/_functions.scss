@@ -1,0 +1,25 @@
+@function sideColor($color_header) {
+    @if ($color_header == #4642af) {
+        @return #c0d0f0;
+    }
+    @if($color_header==black) {
+        @return gray;
+    }
+
+    @if($color_header==rgb(0, 97, 0)) {
+        @return white;
+    }
+}
+
+@function footerColor($color_header) {
+    @if ($color_header == #4642af) {
+        @return rgb(55, 50, 116);
+    }
+    @if($color_header==black) {
+        @return black;
+    }
+
+    @if($color_header==rgb(0, 97, 0)) {
+        @return white;
+    }
+}

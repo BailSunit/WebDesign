@@ -1,0 +1,147 @@
+@import "config";
+@import "mixins";
+@import "functions";
+
+
+* {
+    box-sizing: border-box;
+    --template-sizes : 90px auto 60px;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows: var(--template-sizes);
+    grid-template-areas: "hd #{$middle_second_section}"
+    "sidebar main"
+    "footer footer";
+}
+
+header,
+aside,
+main,
+footer {
+    padding: 16px;
+    @include aligning;
+}
+
+header {
+    background: $color_header;
+    grid-area: hd;
+    background-repeat: no-repeat;
+}
+
+aside {
+    background-color: sideColor($color_header);
+    grid-area: sidebar;
+    font-style: italic;
+
+}
+
+main {
+    grid-area: main;
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: row;
+}
+
+.testimonials>* {
+    flex: 1;
+}
+
+footer {
+    background-color: footerColor($color_header);
+    grid-area: footer;
+}
+
+.navigation-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.navigation-item {
+    margin: 0 10px;
+    a {
+        text-decoration: none;
+        color: white;
+        &:hover,&:active {
+            color: white;
+        }
+    }
+}
+
+.website-header {
+    color: rgb(220, 219, 219);
+    float: left;
+    padding-bottom: 10px;
+    font-family: $website-font-family;
+}
+
+.services {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+%coloring_the_header {
+    color: $color_header;
+}
+
+button {
+    background-color: $color_header;
+    color: white;
+    font-family: sans-serif;
+    padding: 2%;
+    font-size: large;
+}
+
+button:hover {
+    color: sideColor($color_header);
+}
+
+
+.header-text {
+    @extend %coloring_the_header;
+}
+
+h2 {
+    @extend %coloring_the_header;
+}
+
+h3 {
+    color: footerColor($color_header);
+}
+
+.container {}
+
+/* Clear floats after containers */
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container {
+    img {
+        float: left;
+        margin-right: 20px;
+        border-radius: 50%;
+    }
+}
+
+.container {
+    span {
+        font-size: 15px;
+        margin-right: 5px;
+    }
+}

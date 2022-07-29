@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cash Base</title>
+    <link rel="stylesheet" href="scss/styles.css">
+    <link rel="shortcut icon" href="images/monogram.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="website-header">
+            <h1 onclick="location.href='index.html'">
+                Cash Base 
+            </h1>
+        </div>
+        <ul class="navigation-list">
+            <li class="navigation-item"><a href="#">Home</a></li>
+            <li class="navigation-item"><a href="signup.html">Sign Up</a></li>
+            <li class="navigation-item"><a href="#">About Us</a></li>
+        </ul>
+    </header>
+    <aside>
+        <div class="side-bar">
+            <strong><p>Did you know?</p></strong>
+            The nicknames ‘bull’ and ‘bear’ sound funny, but they have significant meanings in the foreign exchange
+            market. The bulls are optimistic traders who believe that the foreign exchange prices will rise at a
+            particular time while the bears are those traders who expect the exchange rates to drop in the future.
+        </div>
+        <div class="side-bar">
+            <p> Did you know that the United Kingdom has a bigger currency exchange market than the United States? It’s
+                no surprise that the USD is the most traded currency in the world, and accepted worldwide as a legal
+                tender. Besides, 87 per cent of all trades involve the USD.
+
+                Since the USD is the most popular in the international market, most traders perceive that the United
+                States is the center for forex trading, but it’s not. Only 19 per cent of all foreign exchanges occur in
+                the US. The UK is the center of forex trading, with 41 per cent of all the world’s currency exchanges
+                taking place in the country.
+
+            </p>
+        </div>
+        <div class="side-bar">
+            <p>An average of 5.3 trillion US dollars gets traded on the foreign exchange market each day. It’s about 53
+                times higher than the New York Stock Exchange and equivalent to four times the world’s GDP. It is so big
+                that it can buy a car for each American household.
+
+            </p>
+        </div>
+    </aside>
+    <main>
+        <h2>Convert Rupee to Dollars</h2>
+        <div class="testimonials">
+            <div>
+                <h3>Enter value in Rupees</h3>
+                &#8377; <input type="text" name="money" id="money" onchange="calculate()">
+            </div>
+            <div>
+                <h3>Converted value</h3>
+                <h4 id="result"></h4>
+            </div>
+        </div>
+        <br>
+        <hr width="760">
+        <div class="header-text"><h2>Try out our services</h2></div>
+        <div class="services">
+            <div>
+                <button onclick="location.href='rupeeToDollar.html'">Convert Rupees to Dollars</button>
+            </div>
+            <div>
+                <button onclick="location.href='dollarToRupee.html'">Convert Dollars to Rupees</button>
+            </div>
+            <div>
+                <button onclick = "location.href='dollarToEuros.html'">Convert Dollars to Euros</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <ul class="navigation-list">
+            <li class="navigation-item"><a href="#">Terms of Use</a></li>
+            <li class="navigation-item"><a href="#">Support</a></li>
+        </ul>
+    </footer>
+    <script type="text/javascript">
+        function calculate() {
+            let money = document.getElementById("money");
+            let result = document.getElementById("result");
+            result.innerHTML = '$'+ Math.round(((money.value/75) + Number.EPSILON) * 100) / 100;
+        }
+    </script>
+</body>
+
+</html>
