@@ -1,0 +1,12 @@
+<div class="inventory-app">
+  <app-product-list [productList]="products" (onProductSelected)="productWasSelected($event)">
+  </app-product-list>
+</div>
+
+<div>
+  <button type="button" id="button" class="btn btn-outline-dark" style="margin: auto" (click)="openModal()">Click me</button>
+</div>
+
+<modal #modal [modalConfig]="modalConfig">
+  It works!
+</modal>
