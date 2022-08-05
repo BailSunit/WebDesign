@@ -1,0 +1,6 @@
+.nameE, .emailE, .passwordE {
+    color: red;
+}
+.hidden {
+     visibility:hidden;
+}
